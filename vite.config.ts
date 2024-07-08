@@ -13,4 +13,8 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  optimizeDeps: {
+    exclude: ["@evolu/common-web"],
+  },
+  worker: { format: "es" },
 });
